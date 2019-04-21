@@ -1,0 +1,24 @@
+<template name="Users">
+    <div class="text-center">
+        <h1>Users</h1>
+        <div class="users">
+            <div class="row">
+                {{#each user in users}}
+                <div class="col-6">
+                    <div class="user">
+                    <i class="fas fa-user"></i>
+                    <p>
+                        John Doe <br> +1 123 456 7890
+                    </p>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    
+    <a class="btn btn-default add-user" href="/users/add">
+        <i class="fas fa-plus"></i>
+    </a>
+</template>
+      

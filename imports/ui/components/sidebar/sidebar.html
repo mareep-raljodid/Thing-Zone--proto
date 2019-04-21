@@ -1,0 +1,13 @@
+<template name="sidebar">
+    {{#unless isHidden}}
+        <div class="overlay"></div>
+    {{/unless}}
+    <div class="sidebar {{#if isHidden}}hidden{{/if}}">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/users">Users</a></li>
+            <li><a href="">Notifications</a></li>
+            <li><a href="">Policy</a></li>
+        </ul>
+    </div>
+</template>

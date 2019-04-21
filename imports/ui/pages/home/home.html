@@ -1,0 +1,25 @@
+<template name="App_home">
+  <div class="text-center">
+    <h1>Home</h1>
+    <div class="devices">
+      <div class="row">
+        {{#each device in devices}}
+          <div class="col-6">
+            <div class="device">
+              <i class="fas fa-lock"></i>
+              <h4>Lock</h4>
+            </div>
+          </div>
+        {{else}}
+          <div class="col">
+            <h3>No devices found!</h3>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+
+  <a class="btn btn-default add-device" href="/add">
+      <i class="fas fa-plus"></i>
+  </a>
+</template>
