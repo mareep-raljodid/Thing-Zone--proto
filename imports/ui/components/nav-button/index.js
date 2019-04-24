@@ -7,6 +7,9 @@ import './nav-button.html';
 Template.navButton.helpers({
     isBackNav() {
         return this.state() === 'back';
+    },
+    isHidden() {
+        return this.state() === 'hide';
     }
 });
 

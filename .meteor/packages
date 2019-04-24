@@ -16,6 +16,7 @@ standard-minifier-js@2.4.0    # JS minifier run for production mode
 es5-shim@4.8.0                # ECMAScript 5 compatibility for older browsers
 ecmascript@0.12.4              # Enable ECMAScript2015+ syntax in app code
 shell-server@0.4.0            # Server-side component of the `meteor shell` command
+session
 
 kadira:flow-router      # FlowRouter is a very simple router for Meteor
 kadira:blaze-layout     # Layout manager for blaze (works well with FlowRouter)
@@ -28,4 +29,6 @@ johanbrook:publication-collector  # Test a Meteor publication by collecting its 
 autopublish
 insecure
 msavin:mongol
+msavin:jetsetter
 fourseven:scss
+dburles:collection-helpers

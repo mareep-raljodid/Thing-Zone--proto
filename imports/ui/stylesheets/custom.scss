@@ -1,9 +1,12 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 @import "./variables";
 
+body {
+    background-color: #78e0f0;
+}
 .wrapper {
     padding: 15px 0;
-    background-color: #78e0f0;
+    height: 100%;
 }
 .nav-button {
     border-radius: 50%;
@@ -58,9 +61,23 @@
 
     .device {
         padding: 5px 0;
-    
+
+        &.add {
+            cursor: pointer;
+        }
+        &:hover {
+            background-color: #78e0f055;
+        }
         i {
             font-size: 60px;
+        }
+        .new-device {
+            width: 100%;
+            height: auto;
+            margin: 0;
+            padding: 0;
+            border: none;
+            background: transparent;
         }
     }
 }
@@ -75,6 +92,10 @@
 .users {
     padding-top: 15px;
 
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
     .user {
         padding: 5px 0;
         background-color: #fffd;
@@ -101,4 +122,18 @@
 }
 .user-form {
     background-color: #fffd;
+    padding: 15px;
+    font-size: 12px;
+
+    input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+    }
+    .permissions-col {
+        padding-top: 7px;
+    }
+}
+.alert {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }

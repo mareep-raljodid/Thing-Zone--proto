@@ -1,9 +1,12 @@
 import { Template } from 'meteor/templating';
 
+import { Homes } from '../../../api/homes/homes';
+import { Devices } from '../../../api/devices/devices';
+
 import './home.html';
 
 Template.App_home.helpers({
     devices() {
-        return [1,2,3,4];
+        return Homes.findOne( Session.get('home') ).devices.map( id=> Devices.findOne( id ));
     }
 });

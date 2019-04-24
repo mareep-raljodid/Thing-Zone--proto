@@ -7,5 +7,6 @@ export const Devices = new Mongo.Collection('devices');
 export const DeviceSchema = new SimpleSchema({
     _id: SimpleSchema.RegEx.Id,
     name: String,
-    icon: String
+    faIcon: String,
+    pngIcon: String
 });
