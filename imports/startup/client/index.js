@@ -2,5 +2,6 @@
 
 import 'bootstrap';
 import './routes.js';
+import './notif';
 
 Meteor.subscribe('users');

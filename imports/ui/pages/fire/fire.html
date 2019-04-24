@@ -1,0 +1,15 @@
+<template name="Fire_detected">
+    <div class="text-center">
+        <h1>A fire has been detected!</h1>
+        <div class="devices container">
+            <h4>Video camera stream</h4>
+            <img src="/img/fire.jpg" alt="Room on fire image" style="width: 100%;">
+            <br>
+            <h6>{{timer}} seconds until notification is forwarded to the next list</h6>
+            <button class="btn btn-primary btn-block resolve">Call 911</button>
+            <button class="btn btn-primary btn-block add">Give me more time!</button>
+            <button class="btn btn-primary btn-block resolve">False alarm</button>
+            <br>
+        </div>
+    </div>
+</template>

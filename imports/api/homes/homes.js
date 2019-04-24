@@ -3,6 +3,7 @@ import { Mongo } from 'meteor/mongo';
 import { SmartHomeSchema } from './schema';
 
 export const Homes = new Mongo.Collection('smarthomes');
+export const Notifs = new Mongo.Collection('notifications');
 
 Homes.helpers({
     users() {

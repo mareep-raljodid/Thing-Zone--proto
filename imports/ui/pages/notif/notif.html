@@ -1,0 +1,62 @@
+<template name="Config_notif">
+    <div class="text-center">
+        <h1>Emergency notifications</h1>
+        <br><br>
+        <a href="/notif/fire" class="btn btn-primary btn-block btn-lg">
+            Setup Fire protocols <i class="fa fa-angle-right"></i>
+        </a>
+        <a href="/notif/cyber" class="btn btn-primary btn-block btn-lg">
+            Setup Cyber attack protocols <i class="fa fa-angle-right"></i>
+        </a>
+    </div>
+</template>
+
+<template name="Config_fire">
+    <div>
+        <h1 class="text-center">Emergency setup</h1>
+        <div class="setup">
+            <h3>Trigger</h3>
+            <select class="custom-select custom-select-lg">
+                <option selected="selected">Smoke detector</option>
+            </select>
+            <h3>Notification forwarding</h3>
+            <h5>First attempt</h5>
+            <form id="first">
+                {{#each user in users}}
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        <input type="checkbox" class="custom-control-input" name="f{{user._id}}" id="f{{user._id}}">
+                        <label class="custom-control-label" for="f{{user._id}}">{{user.profile.name}}</label>
+                    </div>
+                {{else}}
+                    <h6>No temporary access users set!</h6>
+                {{/each}}
+                <button class="btn btn-primary" type="submit">Save</button>
+            </form>
+            <h5>Second attempt</h5>
+            <form id="second">
+                {{#each user in users}}
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        <input type="checkbox" class="custom-control-input" name="s{{user._id}}" id="s{{user._id}}">
+                        <label class="custom-control-label" for="s{{user._id}}">{{user.profile.name}}</label>
+                    </div>
+                {{else}}
+                    <h6>No temporary access users set!</h6>                    
+                {{/each}}
+                <button class="btn btn-primary" type="submit">Save</button>
+            </form>
+        </div>
+    </div>
+</template>
+
+<template name="Config_cyber">
+    <div class="text-center">
+        <h1>Emergency notifications</h1>
+        <br><br>
+        <button class="btn btn-primary btn-block btn-lg">
+            Setup Fire protocols <i class="fa fa-angle-right"></i>
+        </button>
+        <button class="btn btn-primary btn-block btn-lg">
+            Setup Cyber attack protocols <i class="fa fa-angle-right"></i>
+        </button>
+    </div>
+</template>

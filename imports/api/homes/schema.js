@@ -14,3 +14,10 @@ export const SmartHomeSchema = new SimpleSchema({
     'emergency.$': Array,
     'emergency.$.$': SimpleSchema.RegEx.Id
 });
+
+export const NotifSchema = new SimpleSchema({
+    home: SimpleSchema.RegEx.Id,
+    emergency: String,
+    route: String,
+    index: Number   
+});

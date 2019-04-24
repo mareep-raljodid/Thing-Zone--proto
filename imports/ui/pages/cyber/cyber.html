@@ -1,0 +1,17 @@
+<template name="Cyber_detected">
+    <div class="text-center">
+        <h1>A cyber threat has been detected!</h1>
+        <div class="devices container">
+            <h4>Network activity</h4>
+            <img src="/img/network.png" alt="Network activity graph" style="width: 100%;">
+            <br>
+            <h6>{{timer}} seconds until notification is forwarded to the next list</h6>
+            <button class="btn btn-primary btn-block resolve">Disconnect device X</button>
+            <button class="btn btn-primary btn-block resolve">Reboot router</button>
+            <button class="btn btn-primary btn-block resolve">Call support</button>
+            <button class="btn btn-primary btn-block add">Give me more time!</button>
+            <button class="btn btn-primary btn-block resolve">False alarm</button>
+            <br>
+        </div>
+    </div>
+</template>
